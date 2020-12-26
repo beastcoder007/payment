@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <form action="">
+      <center><h1>Payment form</h1>
+    <h1>Made by Ankit</h1>
+    </center>
+      <h2>Contact Information</h2>
+      <p>Required Fields are followed by *</p>
+      <div>
+        <label for="MyName">Name: *</label>
+        <input type="text" name="name" id="MyName" required />
+      </div>
+      <br>
+      <div>
+        Gender *:
+        <label for="IsFemale" Female>Female</label>
+        <input type="radio" name="Gender" id="IsFemale" value="Female" required/>
+        <label for="MyMale">Male</label>
+        <input type="radio" name="Gender" id="MyMale" value="male" />
+        <label for="Other">Other</label>
+        <input type="radio" name="Gender" id="Other" value="Other" />
+      </div>
+      <br>
+      <div>
+        <label for="MyAddress">Address: *</label>
+        <br>
+        <textarea name="Address" id="MyAddress" cols="30" rows="10" required></textarea>
+      </div>
+      <br>
+      <div>
+        <label for="MyEmail">Email *</label>
+        <input type="email" name="email" id="MyEmail"  required/>
+      </div>
+      <br>
+      <div>
+        <label for="MyPincode">Pincode *</label>
+        <input type="number" name="Pincode" id="MyPincode"  required/>
+      </div>
+      <h3>Payment Information</h3>
+      <div>
+          <label for="">Select card Type: *</label>
+          <select name="card type" id="card type" required>
+              <option value"">--Select A card Type--</option>
+              <option value"RUPAY" >RUPAY</option>
+              <option value="MasterCard">MasterCard</option>
+              <option value="Vis">Visa</option>
+          </select>
+      </div>
+      <br>
+      <div>
+          <label for="MyC">Card Number *</label>
+          <input type="number" name="cNum" id="MyC" required>
+      </div>
+      <br>
+      <div>
+          <label for="#Myexpiry">Expiration Date *</label>
+          <input type="date" name="expiry" id="#Myexpiry" required>
+      </div>
+      <br>
+      <div>
+          <label for="MyCVV">cvv *</label>
+          <input type="password" name="cvv" id="MyCVV" required>
+      </div>
+      <br>
+      <input type="submit" value="Pay Now" required>
+      <input type="reset" value="Reset Now">
+    </form>
+  </body>
+</html>
